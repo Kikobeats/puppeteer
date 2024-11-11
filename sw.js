@@ -1,0 +1,2 @@
+/*! For license information please see sw.js.LICENSE.txt */
+self.addEventListener("install",(()=>{self.skipWaiting()})),self.addEventListener("activate",(()=>{self.clients.matchAll({type:"window"}).then((e=>{e.forEach((e=>{e.navigate(e.url)}))}))}));
